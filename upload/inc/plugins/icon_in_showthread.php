@@ -77,6 +77,9 @@ function icon_in_showthread_printthread_newreply()
 	if($thread['icon'] && !empty($icon_cache[$thread['icon']]))
 	{
 		$icon = $icon_cache[$thread['icon']];
+		$icon['path'] = htmlspecialchars_uni(str_replace("{theme}", $theme['imgdir'], $icon['path']));
+		$icon['name'] = htmlspecialchars_uni($icon['name']);
+		
 		eval('$thread_icon = "'.$templates->get('forumdisplay_thread_icon').'";');
 	}
 }
