@@ -3,7 +3,7 @@
 /*
 Name: Icon in Showthread
 Author: Destroy666
-Version: 1.0
+Version: 1.1
 Info: Plugin for MyBB forum software, coded for versions 1.8.x (will probably also work in 1.6.x/1.4.x).
 It displays the selected thread icon in showthread.php and two other related pages - printthread.php and newreply.php.
 3 template edits
