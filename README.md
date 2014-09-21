@@ -3,7 +3,7 @@
 
 **Name**: Thread Icon in Showthread  
 **Author**: Destroy666  
-**Version**: 1.1  
+**Version**: 1.2  
 
 **Info**:
 ---------
@@ -22,6 +22,7 @@ Released under GNU GPL v3, 29 June 2007. Read the LICENSE.md file for more infor
 **Changelog**:
 --------------
 
+**1.2** - globalized $theme and cached the template in newreply/printthread
 **1.1** - added missing htmlspecialchars_uni()  
 **1.0** - initial release  
 

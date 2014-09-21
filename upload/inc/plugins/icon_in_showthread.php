@@ -3,7 +3,7 @@
 /*
 Name: Icon in Showthread
 Author: Destroy666
-Version: 1.1
+Version: 1.2
 Info: Plugin for MyBB forum software, coded for versions 1.8.x (will probably also work in 1.6.x/1.4.x).
 It displays the selected thread icon in showthread.php and two other related pages - printthread.php and newreply.php.
 3 template edits
@@ -34,7 +34,7 @@ function icon_in_showthread_info()
 		'website'		=> 'http://community.mybb.com/mods.php?action=profile&uid=58253',
 		'author'		=> 'Destroy666',
 		'authorsite'	=> 'https://github.com/Destroy666x',
-		'version'		=> 1.1,
+		'version'		=> 1.2,
 		'compatibility'	=> '*'
     );
 }
@@ -63,13 +63,20 @@ function icon_in_showthread_deactivate()
 	.preg_quote('<div style="display: inline-block; vertical-align: middle; padding: 0 3px;">{$thread_icon}</div>').'#i', '', 0);	
 }
 
+if(THIS_SCRIPT == 'newreply.php' || THIS_SCRIPT == 'printthread.php')
+{
+	$GLOBALS['templatelist'] .= !empty($GLOBALS['templatelist'])
+								? ',forumdisplay_thread_icon'
+								: 'forumdisplay_thread_icon';
+}
+
 $plugins->add_hook('showthread_start', 'icon_in_showthread_printthread_newreply');
 $plugins->add_hook('printthread_end', 'icon_in_showthread_printthread_newreply'); // end hook due to start hook misplacement..
 $plugins->add_hook('newreply_start', 'icon_in_showthread_printthread_newreply');
 
 function icon_in_showthread_printthread_newreply()
 {
-	global $cache, $thread, $templates, $thread_icon;
+	global $cache, $thread, $templates, $theme, $thread_icon;
 	
 	$icon_cache = $cache->read('posticons');
 	$thread_icon = '';
