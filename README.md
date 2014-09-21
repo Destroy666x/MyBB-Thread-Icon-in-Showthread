@@ -1,4 +1,4 @@
-**IP to Flags**
+**Thread Icon in Showthread**
 ===============
 
 **Name**: Thread Icon in Showthread  
