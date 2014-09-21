@@ -3,7 +3,7 @@
 /*
 Nazwa: Ikona tematu
 Autor: Destroy666
-Wersja: 1.0
+Wersja: 1.2
 Informacje: Plugin dla skryptu MyBB, zakodowany dla wersji 1.8.x (może także działać w 1.6.x/1.4.x).
 Wyświetla wybraną ikonę tematu w showthread.php i na dwóch innych powiązanych stronach - printthread.php oraz newreply.php.
 3 zmiany w szablonach
