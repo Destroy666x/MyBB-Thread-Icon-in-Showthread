@@ -43,3 +43,13 @@ Released under GNU GPL v3, 29 June 2007. Read the LICENSE.md file for more infor
 You may also want to wrap the mentioned variable like this `<div style="display: inline-block; vertical-align: middle; padding: 0 3px;">{$thread_icon}</div>`
 (it's done by default to align the icon vertically).
 
+**Translations**:
+-----------------
+
+Feel free to submit translation to github in Pull Requests. Also, if you want them to be included on the MyBB mods site, ask me to provide you the contributor status for my project.
+
+**Donations**:
+-------------
+
+Donations will motivate me to work on further MyBB plugins. Feel free to use the button in the ACP Plugins section anytime.  
+Thanks in advance for any input.
